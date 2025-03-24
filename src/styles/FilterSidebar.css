@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+}
+
+/* Filter Sidebar Styling */
+.filter-sidebar {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow-y: auto; /* Ensure content is scrollable */
+  max-height: 100vh; /* Ensure it doesn't overflow the viewport */
+}
+
+.filter-sidebar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.filter-sidebar h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-sidebar h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* List Group Styling */
+.list-group-item {
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Price Filter Styling */
+.price-filter .form-control {
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.price-filter .form-control:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  outline: none;
+}
+
+.price-filter .form-control::placeholder {
+  color: #a0aec0;
+}
+
+/* Discount Filter Styling */
+.discount-filter .form-check-input {
+  margin-right: 10px;
+}
+
+.discount-filter .form-check-label {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Filter Actions Styling */
+.filter-actions .btn {
+  flex: 0 1 auto;
+  min-width: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-actions .btn-outline-secondary {
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.filter-actions .btn-outline-secondary:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+  transform: translateY(-1px);
+}
+
+.filter-actions .btn-primary {
+  background: linear-gradient(145deg, #3182ce, #4299e1);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(66, 153, 225, 0.2);
+}
+
+.filter-actions .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(66, 153, 225, 0.3);
+}
+
+/* Mobile Sidebar Styling */
+.mobile-filter-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.mobile-sidebar.show {
+  transform: translateX(0);
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+.filter-sidebar {
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.price-filter .form-control {
+    font-size: 14px;
+}
+
+.filter-actions .btn {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+.filter-sidebar {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.filter-sidebar h5 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.filter-sidebar h6 {
+    font-size: 1rem;
+}
+
+.price-filter .form-control {
+    font-size: 14px;
+}
+
+.filter-actions .btn {
+    font-size: 14px;
+    padding: 10px;
+}
+}
