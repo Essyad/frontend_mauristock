@@ -62,7 +62,8 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="text-center mt-4">
           <p className="text-muted small mb-0">
-            &copy; {new Date().getFullYear()} Developed by El-Hilal.
+            &copy; {new Date().getFullYear()} Mauristock
+          .
           </p>
         </div>
       </div>
