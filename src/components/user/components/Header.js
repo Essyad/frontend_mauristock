@@ -119,7 +119,7 @@ const Header = () => {
         {!isSearching && (
           <nav className="d-flex align-items-center d-none d-md-flex">
             <a
-              href="/promotions"
+              href="#promotions"
               className="text-secondary me-3 text-decoration-none"
             >
               <i className="bi bi-percent me-1"></i> Promotions
