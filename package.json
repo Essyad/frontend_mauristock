@@ -2,6 +2,7 @@
   "name": "cef-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://Essyad.github.io/frontend_mauristock",
   "dependencies": {
     "@emotion/cache": "11.10.7",
     "@emotion/react": "11.10.6",
