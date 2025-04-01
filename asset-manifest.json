@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/frontend_mauristock/static/css/main.5246feb1.css",
-    "main.js": "/frontend_mauristock/static/js/main.fc98846e.js",
+    "main.js": "/frontend_mauristock/static/js/main.f808ca39.js",
     "static/media/logo.png": "/frontend_mauristock/static/media/logo.cf59bf8e0c543aee3c49.png",
     "static/media/CodecPro-Regular.ttf": "/frontend_mauristock/static/media/CodecPro-Regular.73c4e0f788ac1825caf5.ttf",
     "static/media/CodecPro-Italic.ttf": "/frontend_mauristock/static/media/CodecPro-Italic.b578633aaa348d9ebdd9.ttf",
     "index.html": "/frontend_mauristock/index.html",
     "main.5246feb1.css.map": "/frontend_mauristock/static/css/main.5246feb1.css.map",
-    "main.fc98846e.js.map": "/frontend_mauristock/static/js/main.fc98846e.js.map"
+    "main.f808ca39.js.map": "/frontend_mauristock/static/js/main.f808ca39.js.map"
   },
   "entrypoints": [
     "static/css/main.5246feb1.css",
-    "static/js/main.fc98846e.js"
+    "static/js/main.f808ca39.js"
   ]
 }
